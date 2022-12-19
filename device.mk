@@ -153,10 +153,10 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
-    
+
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
-    
+
 # Disable Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -186,11 +186,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3 \
     android.hardware.drm@1.3.vendor
-    
+
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-MT6768
-    
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
 
@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     libpcap.vendor
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -318,16 +318,16 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3 \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service.mediatek-libperfmgr
-    
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/perf/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     $(DEVICE_PATH)/configs/perf/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     $(DEVICE_PATH)/configs/perf/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml
-    
+
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
-    libmtkperf_client 
-    
+    libmtkperf_client
+
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
@@ -360,7 +360,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor
-    
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
@@ -387,7 +387,9 @@ PRODUCT_PACKAGES += \
     libshim_vtservice \
     libshim_beanpod \
     libshim_showlogo \
-    libpiex_shim
+    libshim_vtservice \
+    libpiex_shim \
+	libcamera_metadata_shim
 
 # Thermal
 PRODUCT_PACKAGES += \
