@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
-    
+
 # MediaTek Preloader Utils
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
@@ -371,6 +371,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Seccomp
 PRODUCT_COPY_FILES += \
