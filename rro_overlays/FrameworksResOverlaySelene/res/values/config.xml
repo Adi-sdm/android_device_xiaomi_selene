@@ -583,4 +583,7 @@
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
+	
+    <!-- 15 seconds for default screen timeout -->
+    <integer name="def_screen_off_timeout">15000</integer>
 </resources>
